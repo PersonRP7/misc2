@@ -8,7 +8,7 @@ def download(url):
         yt.streams.filter(progressive = True, 
     file_extension = "mp4").first().download(output_path = ".")
     except:
-        print("Some Error!")
+        sys.stderr.write("An Error Occured.")
     print('Task Completed!')
 
 if __name__ == "__main__":
